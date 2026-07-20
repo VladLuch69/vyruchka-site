@@ -1054,5 +1054,147 @@ ul {
   *::before,
   *::after {
     transition: none !important;
+  }/* =========================================
+   АНИМАЦИИ ПОЯВЛЕНИЯ
+========================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(38px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Небольшая задержка для элементов списков */
+
+.principle:nth-child(2),
+.process-step:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+.principle:nth-child(3),
+.process-step:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+.process-step:nth-child(4) {
+  transition-delay: 0.24s;
+}
+
+
+/* Более плотная шапка после прокрутки */
+
+.header {
+  transition:
+    min-height 0.35s ease,
+    background-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.header-scrolled {
+  min-height: 64px;
+  background: rgba(17, 16, 14, 0.96);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Плавное движение декоративных элементов */
+
+.hero::before {
+  animation: hero-circle 9s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  animation: hero-square 7s ease-in-out infinite alternate;
+}
+
+@keyframes hero-circle {
+  from {
+    transform: translateY(0) scale(1);
   }
+
+  to {
+    transform: translateY(24px) scale(1.05);
+  }
+}
+
+@keyframes hero-square {
+  from {
+    transform: rotate(45deg) translateY(0);
+  }
+
+  to {
+    transform: rotate(52deg) translateY(-18px);
+  }
+}
+
+
+/* Плавное появление первого экрана */
+
+.hero-title {
+  animation: hero-title-appear 1s ease both;
+}
+
+.hero-text,
+.hero-bottom .button {
+  animation: hero-content-appear 1s 0.22s ease both;
+}
+
+.hero-top,
+.hero-scroll {
+  animation: hero-content-appear 0.9s 0.12s ease both;
+}
+
+@keyframes hero-title-appear {
+  from {
+    opacity: 0;
+    transform: translateY(45px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-content-appear {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Отключаем анимации для пользователей,
+   которые выбрали уменьшение движения */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-title,
+  .hero-text,
+  .hero-bottom .button,
+  .hero-top,
+  .hero-scroll,
+  .hero::before,
+  .hero::after {
+    animation: none;
+  }
+}
 }
