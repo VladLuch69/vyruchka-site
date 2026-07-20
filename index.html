@@ -42,6 +42,13 @@
 
     <!-- Первый экран -->
     <section class="hero" id="top">
+
+      <div class="hero-background" aria-hidden="true">
+        <img src="hero.jpg.png" alt="">
+      </div>
+
+      <div class="hero-overlay" aria-hidden="true"></div>
+
       <div class="hero-top">
         <p class="eyebrow">
           Дизайн-студия для маркетплейсов
@@ -63,7 +70,7 @@
             быстрее понять ценность продукта и принять решение о покупке.
           </p>
 
-          <a class="button button-dark" href="#projects">
+          <a class="button button-light" href="#projects">
             Смотреть проекты
           </a>
         </div>
@@ -77,7 +84,8 @@
 
 
     <!-- Позиционирование -->
-    <section class="statement" id="approach">
+    <section class="statement reveal" id="approach">
+
       <p class="section-label">
         Наш подход
       </p>
@@ -101,9 +109,10 @@
     </section>
 
 
-    <!-- Избранные проекты -->
+    <!-- Проекты -->
     <section class="projects" id="projects">
-      <div class="section-heading">
+
+      <div class="section-heading reveal">
         <p class="section-label">
           Избранные проекты
         </p>
@@ -114,51 +123,58 @@
       </div>
 
 
-      <!-- Проект 1 -->
-      <article class="project project-large">
-        <div class="project-visual project-placeholder project-romuli">
-          <div class="placeholder-content">
-            <span>RÓMULI</span>
-            <small>Здесь позже появится изображение проекта</small>
-          </div>
+      <!-- Rómuli -->
+      <article class="project project-large reveal">
+
+        <div class="project-visual project-image project-image-large">
+          <img
+            src="romuli.jpg.png"
+            alt="Дизайн карточек товара для интерьерного аромата Rómuli"
+          >
         </div>
 
-        <div class="project-info">
-          <div>
-            <p class="project-number">01</p>
-            <h3>Rómuli</h3>
-          </div>
+        <div class="project-content">
+          <div class="project-info">
 
-          <div class="project-description">
-            <p>
-              Визуальная концепция для интерьерного аромата:
-              премиальная подача, атмосфера продукта и последовательное
-              раскрытие его характеристик.
-            </p>
+            <div class="project-title-group">
+              <p class="project-number">01</p>
+              <h3>Rómuli</h3>
+            </div>
 
-            <ul>
-              <li>Арт-дирекшн</li>
-              <li>Инфографика</li>
-              <li>Серия карточек</li>
-            </ul>
+            <div class="project-description">
+              <p>
+                Визуальная концепция для интерьерного аромата:
+                премиальная подача, атмосфера продукта и последовательное
+                раскрытие характеристик.
+              </p>
+
+              <ul>
+                <li>Арт-дирекшн</li>
+                <li>Инфографика</li>
+                <li>Серия карточек</li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </article>
 
 
-      <!-- Проекты 2 и 3 -->
+      <!-- Сумка и часы -->
       <div class="project-grid">
 
-        <article class="project">
-          <div class="project-visual project-placeholder project-bag">
-            <div class="placeholder-content">
-              <span>BAG</span>
-              <small>Изображение добавим позже</small>
-            </div>
+        <article class="project reveal">
+
+          <div class="project-visual project-image">
+            <img
+              src="bag.jpg.png"
+              alt="Дизайн карточек товара для сумки-багета"
+            >
           </div>
 
           <div class="project-info project-info-small">
-            <div>
+
+            <div class="project-title-group">
               <p class="project-number">02</p>
               <h3>Сумка-багет</h3>
             </div>
@@ -167,38 +183,80 @@
               Акцент на фактуре, форме и образе товара.
               Карточка строится как модная рекламная кампания.
             </p>
+
           </div>
         </article>
 
 
-        <article class="project">
-          <div class="project-visual project-placeholder project-vacuum">
-            <div class="placeholder-content">
-              <span>VACUUM</span>
-              <small>Изображение добавим позже</small>
-            </div>
+        <article class="project reveal">
+
+          <div class="project-visual project-image">
+            <img
+              src="watch.jpg.png"
+              alt="Дизайн карточек товара для наручных часов"
+            >
           </div>
 
           <div class="project-info project-info-small">
-            <div>
+
+            <div class="project-title-group">
               <p class="project-number">03</p>
-              <h3>Пылесос</h3>
+              <h3>Часы</h3>
             </div>
 
             <p>
-              Технологичная визуальная система, которая показывает функции,
-              сценарии использования и преимущества товара.
+              Строгая композиция, внимание к деталям и визуальная подача,
+              подчёркивающая статус и характер продукта.
             </p>
+
           </div>
         </article>
 
       </div>
+
+
+      <!-- Пылесос -->
+      <article class="project project-wide reveal">
+
+        <div class="project-visual project-image project-image-wide">
+          <img
+            src="vacuum.jpg.png"
+            alt="Дизайн карточек товара для пылесоса"
+          >
+        </div>
+
+        <div class="project-content">
+          <div class="project-info">
+
+            <div class="project-title-group">
+              <p class="project-number">04</p>
+              <h3>Пылесос</h3>
+            </div>
+
+            <div class="project-description">
+              <p>
+                Технологичная визуальная система, которая показывает функции,
+                сценарии использования и ключевые преимущества товара.
+              </p>
+
+              <ul>
+                <li>Структура серии</li>
+                <li>Инфографика</li>
+                <li>Визуализация функций</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
     </section>
 
 
     <!-- До / После -->
     <section class="before-after">
-      <div class="section-heading">
+
+      <div class="section-heading reveal">
         <p class="section-label">
           До / После
         </p>
@@ -211,36 +269,48 @@
 
       <div class="comparison">
 
-        <div class="comparison-card">
+        <article class="comparison-card reveal">
+
           <div class="comparison-label">
             До
           </div>
 
-          <div class="comparison-placeholder comparison-before">
-            <span>WIN TERRA</span>
-            <small>Исходная карточка</small>
+          <div class="comparison-image">
+            <img
+              src="winterra-before.jpg.png"
+              alt="Карточка товара Winterra до редизайна"
+            >
           </div>
-        </div>
 
-        <div class="comparison-card">
+        </article>
+
+
+        <article class="comparison-card reveal">
+
           <div class="comparison-label">
             После
           </div>
 
-          <div class="comparison-placeholder comparison-after">
-            <span>WIN TERRA</span>
-            <small>Новая визуальная система</small>
+          <div class="comparison-image">
+            <img
+              src="winterra-after.jpg.png"
+              alt="Карточка товара Winterra после редизайна"
+            >
           </div>
-        </div>
+
+        </article>
 
       </div>
 
-      <div class="result">
+
+      <div class="result reveal">
+
         <p class="section-label">
           Результат
         </p>
 
         <div class="result-grid">
+
           <h3>
             Продукт стал выглядеть понятнее, современнее и убедительнее.
           </h3>
@@ -250,6 +320,7 @@
             <p>Сильнее раскрыты преимущества товара.</p>
             <p>Создан единый стиль всей серии.</p>
           </div>
+
         </div>
       </div>
     </section>
@@ -257,33 +328,48 @@
 
     <!-- Принципы -->
     <section class="principles">
-      <p class="section-label">
+
+      <p class="section-label reveal">
         Почему «Выручка»
       </p>
 
       <div class="principles-list">
 
-        <article class="principle">
+        <article class="principle reveal">
           <span>01</span>
-          <h3>Начинаем со смысла</h3>
+
+          <h3>
+            Начинаем со смысла
+          </h3>
+
           <p>
             Сначала определяем задачу, аудиторию и ценность продукта.
             Только после этого переходим к визуальному решению.
           </p>
         </article>
 
-        <article class="principle">
+
+        <article class="principle reveal">
           <span>02</span>
-          <h3>Думаем сериями</h3>
+
+          <h3>
+            Думаем сериями
+          </h3>
+
           <p>
             Каждый экран является частью общей истории.
             Карточки работают вместе, а не конкурируют друг с другом.
           </p>
         </article>
 
-        <article class="principle">
+
+        <article class="principle reveal">
           <span>03</span>
-          <h3>Сохраняем характер бренда</h3>
+
+          <h3>
+            Сохраняем характер бренда
+          </h3>
+
           <p>
             Дизайн помогает выделиться среди конкурентов,
             но не превращает продукт в случайный визуальный шум.
@@ -296,7 +382,9 @@
 
     <!-- Процесс -->
     <section class="process" id="process">
-      <div class="section-heading">
+
+      <div class="section-heading reveal">
+
         <p class="section-label">
           Процесс
         </p>
@@ -304,44 +392,57 @@
         <h2>
           От задачи до готовой серии карточек.
         </h2>
+
       </div>
+
 
       <div class="process-list">
 
-        <article class="process-step">
+        <article class="process-step reveal">
           <span>01</span>
+
           <div>
             <h3>Погружение</h3>
+
             <p>
               Изучаем товар, аудиторию, конкурентов и материалы клиента.
             </p>
           </div>
         </article>
 
-        <article class="process-step">
+
+        <article class="process-step reveal">
           <span>02</span>
+
           <div>
             <h3>Стратегия</h3>
+
             <p>
               Определяем структуру, ключевые сообщения и порядок экранов.
             </p>
           </div>
         </article>
 
-        <article class="process-step">
+
+        <article class="process-step reveal">
           <span>03</span>
+
           <div>
             <h3>Концепция</h3>
+
             <p>
               Создаём визуальное направление и согласовываем главный экран.
             </p>
           </div>
         </article>
 
-        <article class="process-step">
+
+        <article class="process-step reveal">
           <span>04</span>
+
           <div>
             <h3>Система</h3>
+
             <p>
               Разрабатываем всю серию и подготавливаем материалы к публикации.
             </p>
@@ -354,6 +455,7 @@
 
     <!-- Контакты -->
     <section class="contact" id="contact">
+
       <p class="section-label">
         Новый проект
       </p>
@@ -369,6 +471,7 @@
       </p>
 
       <div class="contact-actions">
+
         <a
           class="button button-light"
           href="https://t.me/"
@@ -378,9 +481,13 @@
           Написать в Telegram
         </a>
 
-        <a class="contact-email" href="mailto:hello@example.com">
+        <a
+          class="contact-email"
+          href="mailto:hello@example.com"
+        >
           hello@example.com
         </a>
+
       </div>
     </section>
 
@@ -388,6 +495,7 @@
 
 
   <footer class="footer">
+
     <a class="logo footer-logo" href="#top">
       ВЫРУЧКА
     </a>
@@ -399,6 +507,7 @@
     <p>
       © <span id="current-year">2026</span>
     </p>
+
   </footer>
 
 
